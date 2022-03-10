@@ -7,3 +7,15 @@ D:\code\github\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.Properties.
 D:\code\github\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.csproj.GenerateResource.Cache
 D:\code\github\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.exe
 D:\code\github\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.pdb
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\bin\Debug\WinAkPlugin.exe.config
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\bin\Debug\WinAkPlugin.exe
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\bin\Debug\WinAkPlugin.pdb
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.MainFrm.resources
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.Properties.Resources.resources
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.csproj.GenerateResource.cache
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.csproj.CoreCompileInputs.cache
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.csproj.CopyComplete
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.exe
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.pdb
+F:\VSProjects\AndroidKillerPlugin\WinAkPlugin\obj\Debug\WinAkPlugin.csprojAssemblyReference.cache

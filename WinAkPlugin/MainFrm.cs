@@ -32,6 +32,7 @@ namespace WinAkPlugin
             t.Start();
         }
 
+        // https://www.bilibili.com/read/cv1785046/
         private void Execute()
         {
             string apkPath = this.txtFile.Text;
@@ -53,16 +54,22 @@ namespace WinAkPlugin
                 }
 
                 string tempPath = Path.Combine(tempDir, apkName);
+                //if (this.chkUnzipApk.Checked)
+                //{
+                //    this.ShowMsg("开始解压apk");
+                //    bool result = ZipHelper.UnZip(target_apk_path, tempPath);
+                //    if (!result)
+                //    {
+                //        this.ShowMsg("解压文件失败");
+
+                //        return;
+                //    }
+                //}
+
                 if (this.chkUnzipApk.Checked)
                 {
-                    this.ShowMsg("开始解压apk");
-                    bool result = ZipHelper.UnZip(target_apk_path, tempPath);
-                    if (!result)
-                    {
-                        this.ShowMsg("解压文件失败");
-
-                        return;
-                    }
+                    this.ShowMsg("解压apk");
+                    BandizipHelper.UnZip(apkPath, tempPath);
                 }
 
                 this.progressBar1.Value = 10;
@@ -124,6 +131,10 @@ namespace WinAkPlugin
                 if (this.chkCopyToAkSrc.Checked)
                 {
                     this.ShowMsg("复制.class文件到，AK项目projectsrc目录下");
+                    if (!Directory.Exists(apkprojectPath))
+                    {
+                        Directory.CreateDirectory(apkprojectPath);
+                    }
                     if (Directory.Exists(apkprojectPath))
                     {
                         // 拷贝.class相关内容到projectsrc中
@@ -146,6 +157,14 @@ namespace WinAkPlugin
                 if (this.chkCopyToAkProject.Checked)
                 {
                     this.ShowMsg("复制apktool解包文件到，AK项目project目录下");
+                    if (!Directory.Exists(apkprojectPath))
+                    {
+                        Directory.CreateDirectory(apkprojectPath);
+                    }
+                    if (!Directory.Exists(target_apk_dir_path))
+                    {
+                        Directory.CreateDirectory(target_apk_dir_path);
+                    }
                     if (Directory.Exists(apkprojectPath) && Directory.Exists(target_apk_dir_path))
                     {
                         string[] fis = Directory.GetFiles(target_apk_dir_path);
